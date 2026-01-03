@@ -1,3 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","62","test two","API","2025-11-11","passed","2025-11-11","my tests","Tests\trials_hooks.spec.ts","",""
-"","135","test one","API","2025-11-11","passed","2025-11-11","my tests","Tests\trials_hooks.spec.ts","",""

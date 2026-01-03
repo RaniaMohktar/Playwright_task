@@ -2,8 +2,10 @@
 export default
 [
 {
-   "name" : "rania",
-  "email" :"rania4re33e3ddd@yahoo.com"} 
+   "email" : "raniaali717@yahoo.com",
+  "password" :"Password@123"} ,
 
-
+{
+   "email" : "wrongemail@yahoo.com",
+  "password" :"Password@123"} 
 ]

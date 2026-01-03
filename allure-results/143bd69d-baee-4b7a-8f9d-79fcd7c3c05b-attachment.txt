@@ -1,2 +1,0 @@
-test case globally
- test case one
