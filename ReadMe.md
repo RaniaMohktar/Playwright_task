@@ -1,43 +1,45 @@
-For the GUI part:
+# Automation Project Overview
 
-Firstly, I used the Page Object Model (POM) design pattern, so I created a class for each page I interact with.
+This project contains **GUI** and **API** test automation scenarios, designed to be **readable, maintainable, and scalable**.
 
--The Landing Page is the main page of the website before login.
+---
 
--The Login Page is where I enter my credentials.
+## **GUI Automation**
 
--The Home Page is the page after login where I perform assertions.
+I used the **Page Object Model (POM)** design pattern for the GUI part, creating a class for each page I interact with:
 
+- **Landing Page**: The main page before login.
+- **Login Page**: Where credentials are entered.
+- **Home Page**: The page after login where assertions are performed.
 
-I located all the elements needed on each page. Then, I prepared the login test cases:
+### **Test Preparation**
+- All necessary elements on each page were located.
+- **Login test cases** were prepared:
+  - **Positive scenario**: valid credentials.
+  - **Negative scenario**: invalid credentials.
+- **Base URL** is centralized in the project configuration file.
+- **Screenshots** are captured automatically on test failure.
+- **Reporting**:
+  - HTML report
+  - Allure report
 
--Two test cases: one for the positive scenario with valid credentials,
+### **Test Data**
+- A test data file is used with **two rows**:
+  - Valid credentials
+  - Invalid credentials
 
--And another for the negative scenario with invalid credentials.
+> This is a light scenario, but the code is designed to be **clean, maintainable, and scalable**.
 
+---
 
+## **API Automation**
 
--I centralized the base URL in the project configuration file.
--I also configured the framework to take screenshots on failure.
--For reporting, I used two types: HTML report and Allure report.
+### **Test Cases**
+- **Positive scenario**: using valid data.
+- **Negative scenario**: using invalid data.
 
-Additionally, I used a Test Data file with two rows:
+### **Implementation**
+- The full API response is returned.
+- Status code and message are extracted separately for assertions.
+- The same centralized **test data file** is used.
 
--One for valid credentials,
-
--And another for invalid data.
-
-This is a light scenario, but I tried to make the code readable, maintainable, and scalable.
-
-
-
-For the APIs part:
-
-I created two test cases:
-
--One for the positive scenario with valid data,
-
--And another for the negative scenario with invalid data.
-
-I return the whole response, then split the status code and message to assert on both.
-I also used the same test data file to keep the data centralized.
